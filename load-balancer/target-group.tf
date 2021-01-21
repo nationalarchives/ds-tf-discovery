@@ -1,4 +1,4 @@
-resource "aws_lb_target_group" "int_servers_lb_target" {
+resource "aws_lb_target_group" "servers_lb_target" {
     name     = var.lbt_name
     port     = 80
     protocol = "HTTP"

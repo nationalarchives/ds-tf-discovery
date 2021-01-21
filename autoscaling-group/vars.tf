@@ -1,24 +1,19 @@
-variable resource_prefix {}
-variable "name" {}
+# launch configuration
+variable "lc_name" {}
+variable "image_id" {}
+variable "instance_type" {}
+variable "instance_profile" {}
+variable "key_name" {}
+variable "user_data" {}
+variable "volume_size" {}
+variable "security_groups" {}
+
+# autoscaling group
+variable "asg_name" {}
 variable "min_size" {}
 variable "max_size" {}
-variable "instance_type" {}
-variable "volume_size" {}
-variable "lb_target_arn" {}
-
 variable "vpc_zone_identifier" {}
+variable "asg_tags" {}
 
-variable "instance_profile" {}
-variable "name_prefix" {}
-variable "image_id" {}
-variable "key_name" {}
-variable "security_groups" {}
-variable "user_data" {}
-
-variable "tags" {}
-
-variable "product" {}
-variable "costcentre" {}
-variable "environment" {}
-variable "owner" {}
-variable "created_by" {}
+# autoscaling group attachment
+variable "lb_target_arn" {}
