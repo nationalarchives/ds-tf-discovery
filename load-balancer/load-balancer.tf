@@ -7,7 +7,7 @@ resource "aws_lb" "lb" {
 
     subnets = var.public_subnet_ids
 
-    tags = var.tags
+    tags = var.lb_tags
 }
 
 resource "aws_lb_listener" "http_lb_listener" {

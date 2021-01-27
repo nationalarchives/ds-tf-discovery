@@ -1,5 +1,5 @@
 # launch configuration
-variable "lc_name" {}
+variable "name_prefix" {}
 variable "image_id" {}
 variable "instance_type" {}
 variable "instance_profile" {}
@@ -9,11 +9,11 @@ variable "volume_size" {}
 variable "security_groups" {}
 
 # autoscaling group
-variable "asg_name" {}
+variable "name" {}
 variable "min_size" {}
 variable "max_size" {}
 variable "vpc_zone_identifier" {}
-variable "asg_tags" {}
+variable "tags" {}
 
 # autoscaling group attachment
 variable "lb_target_arn" {}
