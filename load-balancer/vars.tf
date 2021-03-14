@@ -2,7 +2,7 @@
 variable "lb_name" {}
 variable "internal" {}
 variable "security_group_ids" {}
-variable "public_subnet_ids" {}
+variable "subnet_ids" {}
 variable "ssl_cert_arn" {}
 variable "lb_tags" {}
 

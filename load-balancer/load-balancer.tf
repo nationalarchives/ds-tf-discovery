@@ -5,7 +5,7 @@ resource "aws_lb" "lb" {
     load_balancer_type = "application"
     security_groups    = var.security_group_ids
 
-    subnets = var.public_subnet_ids
+    subnets = var.subnet_ids
 
     tags = var.lb_tags
 }
